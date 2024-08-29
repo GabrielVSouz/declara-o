@@ -89,3 +89,13 @@ button {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+@media (max-width: 768px) {
+    /* Estilos para telas menores que 768px */
+    .container {
+      padding: 10px;
+    }
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }

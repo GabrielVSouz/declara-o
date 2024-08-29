@@ -1,0 +1,91 @@
+.fundo {
+    position: relative;
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    color: white; /* Cor do texto para contraste */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex; /* Flexbox para centralizar verticalmente */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center; /* Alinha horizontalmente ao centro */
+}
+.texto {
+    position: absolute; /* Permite que o texto fique sobre a imagem */
+    top: 50%; /* Posiciona verticalmente ao centro */
+    left: 50%; /* Posiciona horizontalmente ao centro */
+    transform: translate(-50%, -50%); /* Ajusta a posição para exatamente ao centro */
+    padding: 20px; /* Espaçamento interno ao redor do texto */
+    background-color: rgba(56, 112, 165, 0.5); /* Fundo semi-transparente para o texto */
+    border-radius: 10px; /* Bordas arredondadas */
+    max-width: 80%; /* Limita a largura máxima do texto */
+}
+
+h1 {
+    font-size: 3rem; /* Tamanho maior para o título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+p {
+    font-size: 1.5rem; /* Tamanho para o parágrafo */
+}
+/* Estilo para a div que contém os botões */
+.botao-container {
+    display: flex; /* Alinha os botões horizontalmente */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 20px; /* Espaçamento acima dos botões */
+}
+
+/* Estilo para os botões */
+button {
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    font-size: 1rem; /* Tamanho da fonte */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave para alterações de cor e tamanho */
+}
+
+/* Estilo específico para o botão "Sim" */
+.botao-sim {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+}
+
+.botao-sim:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+/* Estilo específico para o botão "Não" */
+.botao-nao {
+    background-color: #f44336; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto */
+    position: relative; /* Permite que o botão se mova */
+    transition: transform 0.3s; /* Transição suave para a mudança de posição */
+}
+
+.botao-nao:hover {
+    background-color: #e53935; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+/* Estilo para a mensagem de confirmação */
+.mensagem-confirmacao {
+    display: none;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: rgba(0, 128, 0, 0.8);
+    border-radius: 10px;
+    position: relative;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
